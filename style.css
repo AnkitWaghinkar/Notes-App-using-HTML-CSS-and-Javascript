@@ -1,0 +1,94 @@
+:root{
+    --body: linear-gradient(150deg,rgba(63, 94, 251, 1) 0%, rgba(240, 43, 82, 1) 100%);
+    --div-background: #e2ebf0;    
+    --div-border: #bdc2c5;        
+    --btn-backround: #9842df;     
+    --btn-hover: #7b2cbf;  
+    --shadow: 0 8px 22px rgba(0, 0, 0, 0.76);       
+    --text: #000000; 
+    --input: #9f9ba146; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--body);
+}
+
+.container{
+    width: 70%;
+    padding: 2rem;
+    border: 0.1rem solid var(--div-border);
+    background-color: var(--div-background);
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    box-shadow: var(--shadow);
+}
+
+.title{
+    font-size: 2rem;
+    gap:0.2rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+button{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    padding: 0.25rem 0.8rem;
+    border: none;
+    color: white;
+    background-color: var(--btn-backround);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: translateY(-0.2rem);
+    background-color: var(--btn-hover);
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+button img{
+    width: 1.1rem;
+    margin-right: 0.2rem;
+    transform: translateY(0.1rem);
+    position: relative;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(236deg) brightness(110%) contrast(101%);
+}
+
+.input-box{
+    padding: 2rem;
+    width: 100%;
+    position: relative;
+    background-color: var(--input);
+    min-height: 9rem;
+    border-radius: 0.5rem;
+    margin-top: 0.8rem;
+    outline: 0.1rem solid #7026b14d;
+    font-size: 1rem;
+}
+
+.input-box img{
+    position: absolute;
+    width: 1.5rem;
+    bottom: 0.7rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
